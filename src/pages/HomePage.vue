@@ -79,7 +79,7 @@ const songList: any[] = [
   height: 100%;
   background: black;
   backdrop-filter: blur(35px);
-  border-radius: 40px;
+  //border-radius: 40px;
   .name-song {
     color: #E5E5E5;
     font-size: 24px;

@@ -167,7 +167,7 @@
   height: 100%;
   background: black;
   backdrop-filter: blur(35px);
-  border-radius: 40px;
+  //border-radius: 40px;
   padding: 29px 32px;
 
   .header {
