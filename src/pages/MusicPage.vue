@@ -135,7 +135,7 @@
         <i class="fa-solid fa-arrow-left"></i>
       </div>
       <div class="pause">
-        <img class="mo" src="/Pause.png"/>
+        <img class="mo" src="/pause1.png"/>
       </div>
       <div class="song-next">
         <i class="fa-solid fa-arrow-right"></i>
