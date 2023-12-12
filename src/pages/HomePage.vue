@@ -15,19 +15,26 @@
     </div>
     <div class="wrapper-song">
       <div v-for="song in songList" :key="song.id" class="item-song">
-        <router-link to="/music" class="noi-dung" >
-          <img :src="song.img"/>
+        <div class="noi-dung">
+          <img class="avt-song" :src="song.img"/>
           <div>
             <div class="name-song">{{ song.name }}</div>
             <div class="tac-gia">{{ song.tac_gia }}</div>
           </div>
-        </router-link>
+        </div>
         <div class="tuong-tac">
-          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none">
-            <path
-                d="M18.1892 2.24031L18.1894 2.24048C18.7375 2.7882 19.1723 3.43856 19.4689 4.15438C19.7656 4.87021 19.9182 5.63747 19.9182 6.41232C19.9182 7.18717 19.7656 7.95443 19.4689 8.67026C19.1723 9.38608 18.7375 10.0364 18.1894 10.5842L18.1893 10.5843L10.5873 18.1863L10.5858 18.1878C10.5374 18.2365 10.4799 18.2753 10.4165 18.3017C10.353 18.3281 10.285 18.3417 10.2163 18.3417C10.1476 18.3417 10.0796 18.3281 10.0162 18.3017C9.95276 18.2753 9.89521 18.2365 9.84684 18.1878L9.84538 18.1863L2.24335 10.5843L2.2421 10.583C1.18369 9.53201 0.562812 8.11898 0.504511 6.6285C0.44621 5.13803 0.954812 3.68082 1.9279 2.55032C2.90098 1.41983 4.26627 0.700019 5.74882 0.535849C7.23137 0.371679 8.72107 0.775342 9.91792 1.66555L10.2153 1.88676L10.5134 1.66651C11.6496 0.827117 13.0492 0.42336 14.4578 0.528663C15.8665 0.633965 17.1906 1.24133 18.1892 2.24031Z"
-                stroke="white"/>
-          </svg>
+          <div @click="tuongTac()">
+            <svg class="chua-tim" xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none">
+              <path
+                  d="M18.1892 2.24031L18.1894 2.24048C18.7375 2.7882 19.1723 3.43856 19.4689 4.15438C19.7656 4.87021 19.9182 5.63747 19.9182 6.41232C19.9182 7.18717 19.7656 7.95443 19.4689 8.67026C19.1723 9.38608 18.7375 10.0364 18.1894 10.5842L18.1893 10.5843L10.5873 18.1863L10.5858 18.1878C10.5374 18.2365 10.4799 18.2753 10.4165 18.3017C10.353 18.3281 10.285 18.3417 10.2163 18.3417C10.1476 18.3417 10.0796 18.3281 10.0162 18.3017C9.95276 18.2753 9.89521 18.2365 9.84684 18.1878L9.84538 18.1863L2.24335 10.5843L2.2421 10.583C1.18369 9.53201 0.562812 8.11898 0.504511 6.6285C0.44621 5.13803 0.954812 3.68082 1.9279 2.55032C2.90098 1.41983 4.26627 0.700019 5.74882 0.535849C7.23137 0.371679 8.72107 0.775342 9.91792 1.66555L10.2153 1.88676L10.5134 1.66651C11.6496 0.827117 13.0492 0.42336 14.4578 0.528663C15.8665 0.633965 17.1906 1.24133 18.1892 2.24031Z"
+                  stroke="white"/>
+            </svg>
+<!--            <svg class="tim" xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none">-->
+<!--              <path-->
+<!--                  d="M14.4951 0.0300538C16.0232 0.144284 17.4595 0.803141 18.5429 1.88681C19.1374 2.48097 19.609 3.18646 19.9308 3.96297C20.2526 4.73947 20.4182 5.57178 20.4182 6.41232C20.4182 7.25286 20.2526 8.08517 19.9308 8.86167C19.609 9.63818 19.1374 10.3437 18.5429 10.9378L10.9408 18.5399C10.846 18.6355 10.7331 18.7114 10.6087 18.7632C10.4844 18.815 10.351 18.8417 10.2163 18.8417C10.0816 18.8417 9.94824 18.815 9.8239 18.7632C9.69955 18.7114 9.58669 18.6355 9.49183 18.5399L1.88979 10.9378C0.741645 9.7977 0.068137 8.26488 0.00489327 6.64805C-0.0583504 5.03122 0.493368 3.45047 1.54895 2.22414C2.60453 0.997805 4.08555 0.216975 5.69379 0.0388868C7.30203 -0.139201 8.91801 0.298683 10.2163 1.26436C11.4488 0.35381 12.9671 -0.0841759 14.4951 0.0300538Z"-->
+<!--                  fill="#EB5757"/>-->
+<!--            </svg>-->
+          </div>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path
                 d="M7.0051 13.4C6.6451 13.4 6.2651 13.24 6.0051 12.98C5.7451 12.72 5.6051 12.36 5.6051 12C5.6051 11.64 5.7651 11.28 6.0051 11C6.2651 10.74 6.6251 10.6 7.0051 10.6C7.3651 10.6 7.72511 10.76 7.98511 11C8.24511 11.26 8.4051 11.62 8.4051 12C8.4051 12.36 8.24511 12.72 7.98511 12.98C7.74511 13.26 7.3651 13.4 7.0051 13.4ZM13.0051 12.98C13.2651 12.72 13.4251 12.36 13.4251 12C13.4251 11.64 13.2651 11.28 13.0051 11C12.7451 10.74 12.3851 10.6 12.0251 10.6C11.6651 10.6 11.2851 10.76 11.0251 11C10.7651 11.26 10.6251 11.62 10.6251 12C10.6251 12.36 10.7851 12.72 11.0251 12.98C11.2851 13.24 11.6451 13.4 12.0251 13.4C12.3651 13.4 12.7451 13.26 13.0051 12.98ZM18.0051 12.98C18.2651 12.72 18.4251 12.36 18.4251 12C18.4251 11.64 18.2651 11.28 18.0051 11C17.7451 10.74 17.3851 10.6 17.0251 10.6C16.6651 10.6 16.2851 10.76 16.0251 11C15.7651 11.26 15.6251 11.62 15.6251 12C15.6251 12.36 15.7851 12.72 16.0251 12.98C16.2851 13.24 16.6451 13.4 17.0251 13.4C17.3651 13.4 17.7451 13.26 18.0051 12.98Z"
@@ -36,16 +43,16 @@
         </div>
       </div>
     </div>
-    <div class="playing">
+    <router-link to="/music" class="playing">
       <div class="noi-dung">
-        <img class="song-playing" src="/song-1.png"/>
+        <img class="avt-song" src="https://avatar-ex-swe.nixcdn.com/song/2018/03/30/b/1/8/8/1522404477634_640.jpg"/>
         <div>
-          <div class="name-song">Remedy</div>
-          <div class="tac-gia">Annie Schindel</div>
+          <div class="name-song">Cơn mưa ngang qua</div>
+          <div class="tac-gia">Sơn Tùng M-TP</div>
         </div>
       </div>
       <div class="play">
-        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+        <svg class="circle" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
           <circle cx="25" cy="25" r="25" fill="#FAFAFA"/>
         </svg>
         <svg class="icon-play" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -54,22 +61,23 @@
           <rect x="14" y="3" width="6" height="18" rx="2" fill="black"/>
         </svg>
       </div>
-    </div>
+    </router-link>
   </div>
 </template>
 <script setup lang="ts">
 // import { ref } from "vue";
 
 const songList: any[] = [
-  {id: 1, name: 'Remedy', tac_gia: 'Annie Schindel', img: '/song-1.png'},
-  {id: 2, name: 'Giant', tac_gia: 'Yuqi', img: '/song-2.png'},
-  {id: 3, name: 'Faith', tac_gia: 'Nurko', img: '/song-3.png'},
-  {id: 4, name: 'Voice?', tac_gia: 'Hatena', img: '/song-4.png'},
-  {id: 5, name: 'Remedy', tac_gia: 'Annie Schindel', img: '/song-1.png'},
-  {id: 6, name: 'Giant', tac_gia: 'Yuqi', img: '/song-2.png'},
+  {id: 1, name: 'Cơn mưa ngang qua', tac_gia: 'Sơn Tùng M-TP', img: 'https://avatar-ex-swe.nixcdn.com/song/2018/03/30/b/1/8/8/1522404477634_640.jpg'},
+  {id: 2, name: '24h', tac_gia: 'Lyly', img: 'https://i.ytimg.com/vi/IpniN1Wq68Y/maxresdefault.jpg'},
+  {id: 3, name: 'Hoa vô sắc', tac_gia: 'Jack', img: 'https://i.ytimg.com/vi/fArpx8TRWU8/maxresdefault.jpg'},
+  {id: 4, name: 'Về bên anh', tac_gia: 'Jack', img: 'https://i.ytimg.com/vi/gZKkD3edFaE/maxresdefault.jpg'},
+  {id: 5, name: 'Là anh', tac_gia: 'Phạm Lịch', img: 'https://avatar-ex-swe.nixcdn.com/song/2023/03/04/3/2/c/4/1677931592531_640.jpg'},
+  {id: 6, name: 'Mãi mãi bên nhau', tac_gia: 'Noo Phước Thịnh', img: 'https://i.ytimg.com/vi/G2lgkhZXtWE/maxresdefault.jpg'},
 
 ]
-
+const tuongTac = () =>{
+}
 </script>
 <style scoped lang="scss">
 .container {
@@ -84,7 +92,14 @@ const songList: any[] = [
     color: #E5E5E5;
     font-size: 24px;
     font-weight: 700;
-    padding: 6px;
+    padding-bottom: 6px;
+  }
+  .avt-song{
+    width: 85px;
+    height: 85px;
+    border-radius: 25px;
+    box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
   }
 
   .tac-gia {
@@ -92,6 +107,7 @@ const songList: any[] = [
     font-size: 16px;
     font-weight: 600;
   }
+
   .wrapper-song {
     display: flex;
     flex-direction: column;
@@ -102,6 +118,8 @@ const songList: any[] = [
   .noi-dung {
     display: flex;
     align-items: center;
+    gap:10px;
+
   }
 
   .header {
@@ -123,15 +141,14 @@ const songList: any[] = [
     background: rgba(255, 255, 255, 0.07);
     box-shadow: 0px -19px 47px 0px rgba(0, 0, 0, 0.06);
     backdrop-filter: blur(10.5px);
-    padding: 10px 12px 108px 0px;
+    padding: 10px 12px 138px 10px;
     margin: 33px 20px 0px;
 
     .item-song {
       display: flex;
       justify-content: space-between;
       align-items: center;
-
-
+      padding-bottom: 7px;
 
 
       .tuong-tac {
@@ -150,9 +167,10 @@ const songList: any[] = [
     background: rgba(255, 255, 255, 0.07);
     box-shadow: 0px -19px 47px 0px rgba(0, 0, 0, 0.06);
     position: fixed;
+    backdrop-filter: blur(10.5px);
     bottom: 0;
     width: 100%;
-    padding:0 50px;
+    padding: 20px 50px;
 
     .play {
       position: relative;
@@ -166,4 +184,41 @@ const songList: any[] = [
     }
   }
 }
+
+@media (max-width: 586px) {
+  .container{
+    .avt-song{
+      width: 80px;
+      height: 80px;
+    }
+    .name-song{
+      font-size: 17px;
+    }
+    .tac-gia{
+      font-size: 13px;
+    }
+    .chua-tim{
+      width: 18px;
+    }
+    .song-playing{
+      width: 110px;
+    }
+    .playing{
+      .play{
+        .circle{
+          width: 40px;
+        }
+        .icon-play{
+          top: 13px;
+          right: 10px;
+          width: 20px;
+        }
+      }
+    }
+
+
+  }
+
+}
+
 </style>

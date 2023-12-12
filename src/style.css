@@ -10,3 +10,17 @@ body {
 a{
     text-decoration: none;
 }
+.wrapper-song {
+    scrollbar-width: none; /* Ẩn thanh cuộn */
+}
+
+/* Ẩn thanh cuộn cho ngón tay thanh cuộn */
+.wrapper-song::-webkit-scrollbar {
+    display: none; /* Ẩn thanh cuộn */
+}
+/*.restaurants-dt {*/
+/*    scrollbar-width: none; !* Ẩn thanh cuộn *!*/
+/*}*/
+/*.restaurants-dt::-webkit-scrollbar {*/
+/*    display: none; !* Ẩn thanh cuộn *!*/
+/*}*/

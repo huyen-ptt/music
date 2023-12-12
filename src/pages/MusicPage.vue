@@ -1,11 +1,13 @@
 <template>
   <div class="container-music">
     <div class="header">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path
-            d="M12.005 15.4C11.785 15.4 11.585 15.32 11.425 15.16L6.42501 9.96C6.12501 9.64 6.125 9.14 6.445 8.82C6.765 8.52 7.26502 8.52001 7.58502 8.84001L12.005 13.44L16.425 8.84001C16.725 8.52001 17.245 8.52 17.565 8.82C17.885 9.12 17.885 9.64 17.585 9.96L12.585 15.16C12.425 15.32 12.225 15.4 12.005 15.4Z"
-            fill="white"/>
-      </svg>
+      <router-link to="/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path
+              d="M12.005 15.4C11.785 15.4 11.585 15.32 11.425 15.16L6.42501 9.96C6.12501 9.64 6.125 9.14 6.445 8.82C6.765 8.52 7.26502 8.52001 7.58502 8.84001L12.005 13.44L16.425 8.84001C16.725 8.52001 17.245 8.52 17.565 8.82C17.885 9.12 17.885 9.64 17.585 9.96L12.585 15.16C12.425 15.32 12.225 15.4 12.005 15.4Z"
+              fill="white"/>
+        </svg>
+      </router-link>
       <div class="title">Now Playing</div>
       <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
         <g clip-path="url(#clip0_1_311)">
@@ -310,6 +312,24 @@
       }
     }
   }
+
+}
+@media (max-width:586px) {
+  .container-music{
+    .footer{
+      .pause{
+        width: 60px;
+        height: 60px;
+        .mo{
+          top: 17px;
+          left: 17px;
+          width: 27px;
+
+        }
+      }
+    }
+  }
+
 
 }
 </style>
