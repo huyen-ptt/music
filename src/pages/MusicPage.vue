@@ -41,7 +41,7 @@
       </svg>
     </div>
     <div class="song">
-      <img class="img-playing" src="/song-5.png"/>
+      <img class="img-playing" src="https://avatar-ex-swe.nixcdn.com/song/2018/03/30/b/1/8/8/1522404477634_640.jpg"/>
       <div class="name-song">Remedy</div>
       <div class="tac-gia">Annie Schindel</div>
       <div class="thanh-nhac">
@@ -179,7 +179,6 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
-    padding: 22px;
     height: 80px;
 
     .title {
@@ -199,6 +198,8 @@
     .img-playing {
       width: 100%;
       object-fit: cover;
+      border-radius: 30px;
+      padding-bottom: 15px;
     }
 
     .name-song {
