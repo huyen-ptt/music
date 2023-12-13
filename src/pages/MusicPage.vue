@@ -166,11 +166,13 @@
   max-width: 768px;
   margin: 0 auto;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: black;
   backdrop-filter: blur(35px);
   //border-radius: 40px;
   padding: 29px 32px;
+  display: flex;
+  flex-direction: column;
 
   .header {
     width: 100%;
@@ -178,6 +180,7 @@
     justify-content: space-between;
     text-align: center;
     padding: 22px;
+    height: 80px;
 
     .title {
       color: #F0F0F0;
@@ -188,6 +191,10 @@
 
   .song {
     padding-bottom: 52px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    flex: 1;
 
     .img-playing {
       width: 100%;
@@ -282,7 +289,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    //position: fixed;
+    //bottom: 0;
+    height: 80px;
     .song-next {
       border-radius: 999px;
       background: rgba(150, 150, 150, 0.12);

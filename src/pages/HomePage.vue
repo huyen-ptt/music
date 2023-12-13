@@ -24,16 +24,17 @@
         </div>
         <div class="tuong-tac">
           <div @click="tuongTac()">
-            <svg class="chua-tim" xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none">
+            <svg class="chua-tim" xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19"
+                 fill="none">
               <path
                   d="M18.1892 2.24031L18.1894 2.24048C18.7375 2.7882 19.1723 3.43856 19.4689 4.15438C19.7656 4.87021 19.9182 5.63747 19.9182 6.41232C19.9182 7.18717 19.7656 7.95443 19.4689 8.67026C19.1723 9.38608 18.7375 10.0364 18.1894 10.5842L18.1893 10.5843L10.5873 18.1863L10.5858 18.1878C10.5374 18.2365 10.4799 18.2753 10.4165 18.3017C10.353 18.3281 10.285 18.3417 10.2163 18.3417C10.1476 18.3417 10.0796 18.3281 10.0162 18.3017C9.95276 18.2753 9.89521 18.2365 9.84684 18.1878L9.84538 18.1863L2.24335 10.5843L2.2421 10.583C1.18369 9.53201 0.562812 8.11898 0.504511 6.6285C0.44621 5.13803 0.954812 3.68082 1.9279 2.55032C2.90098 1.41983 4.26627 0.700019 5.74882 0.535849C7.23137 0.371679 8.72107 0.775342 9.91792 1.66555L10.2153 1.88676L10.5134 1.66651C11.6496 0.827117 13.0492 0.42336 14.4578 0.528663C15.8665 0.633965 17.1906 1.24133 18.1892 2.24031Z"
                   stroke="white"/>
             </svg>
-<!--            <svg class="tim" xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none">-->
-<!--              <path-->
-<!--                  d="M14.4951 0.0300538C16.0232 0.144284 17.4595 0.803141 18.5429 1.88681C19.1374 2.48097 19.609 3.18646 19.9308 3.96297C20.2526 4.73947 20.4182 5.57178 20.4182 6.41232C20.4182 7.25286 20.2526 8.08517 19.9308 8.86167C19.609 9.63818 19.1374 10.3437 18.5429 10.9378L10.9408 18.5399C10.846 18.6355 10.7331 18.7114 10.6087 18.7632C10.4844 18.815 10.351 18.8417 10.2163 18.8417C10.0816 18.8417 9.94824 18.815 9.8239 18.7632C9.69955 18.7114 9.58669 18.6355 9.49183 18.5399L1.88979 10.9378C0.741645 9.7977 0.068137 8.26488 0.00489327 6.64805C-0.0583504 5.03122 0.493368 3.45047 1.54895 2.22414C2.60453 0.997805 4.08555 0.216975 5.69379 0.0388868C7.30203 -0.139201 8.91801 0.298683 10.2163 1.26436C11.4488 0.35381 12.9671 -0.0841759 14.4951 0.0300538Z"-->
-<!--                  fill="#EB5757"/>-->
-<!--            </svg>-->
+            <!--            <svg class="tim" xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none">-->
+            <!--              <path-->
+            <!--                  d="M14.4951 0.0300538C16.0232 0.144284 17.4595 0.803141 18.5429 1.88681C19.1374 2.48097 19.609 3.18646 19.9308 3.96297C20.2526 4.73947 20.4182 5.57178 20.4182 6.41232C20.4182 7.25286 20.2526 8.08517 19.9308 8.86167C19.609 9.63818 19.1374 10.3437 18.5429 10.9378L10.9408 18.5399C10.846 18.6355 10.7331 18.7114 10.6087 18.7632C10.4844 18.815 10.351 18.8417 10.2163 18.8417C10.0816 18.8417 9.94824 18.815 9.8239 18.7632C9.69955 18.7114 9.58669 18.6355 9.49183 18.5399L1.88979 10.9378C0.741645 9.7977 0.068137 8.26488 0.00489327 6.64805C-0.0583504 5.03122 0.493368 3.45047 1.54895 2.22414C2.60453 0.997805 4.08555 0.216975 5.69379 0.0388868C7.30203 -0.139201 8.91801 0.298683 10.2163 1.26436C11.4488 0.35381 12.9671 -0.0841759 14.4951 0.0300538Z"-->
+            <!--                  fill="#EB5757"/>-->
+            <!--            </svg>-->
           </div>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path
@@ -68,15 +69,30 @@
 // import { ref } from "vue";
 
 const songList: any[] = [
-  {id: 1, name: 'Cơn mưa ngang qua', tac_gia: 'Sơn Tùng M-TP', img: 'https://avatar-ex-swe.nixcdn.com/song/2018/03/30/b/1/8/8/1522404477634_640.jpg'},
+  {
+    id: 1,
+    name: 'Cơn mưa ngang qua',
+    tac_gia: 'Sơn Tùng M-TP',
+    img: 'https://avatar-ex-swe.nixcdn.com/song/2018/03/30/b/1/8/8/1522404477634_640.jpg'
+  },
   {id: 2, name: '24h', tac_gia: 'Lyly', img: 'https://i.ytimg.com/vi/IpniN1Wq68Y/maxresdefault.jpg'},
   {id: 3, name: 'Hoa vô sắc', tac_gia: 'Jack', img: 'https://i.ytimg.com/vi/fArpx8TRWU8/maxresdefault.jpg'},
   {id: 4, name: 'Về bên anh', tac_gia: 'Jack', img: 'https://i.ytimg.com/vi/gZKkD3edFaE/maxresdefault.jpg'},
-  {id: 5, name: 'Là anh', tac_gia: 'Phạm Lịch', img: 'https://avatar-ex-swe.nixcdn.com/song/2023/03/04/3/2/c/4/1677931592531_640.jpg'},
-  {id: 6, name: 'Mãi mãi bên nhau', tac_gia: 'Noo Phước Thịnh', img: 'https://i.ytimg.com/vi/G2lgkhZXtWE/maxresdefault.jpg'},
+  {
+    id: 5,
+    name: 'Là anh',
+    tac_gia: 'Phạm Lịch',
+    img: 'https://avatar-ex-swe.nixcdn.com/song/2023/03/04/3/2/c/4/1677931592531_640.jpg'
+  },
+  {
+    id: 6,
+    name: 'Mãi mãi bên nhau',
+    tac_gia: 'Noo Phước Thịnh',
+    img: 'https://i.ytimg.com/vi/G2lgkhZXtWE/maxresdefault.jpg'
+  },
 
 ]
-const tuongTac = () =>{
+const tuongTac = () => {
 }
 </script>
 <style scoped lang="scss">
@@ -84,7 +100,9 @@ const tuongTac = () =>{
   max-width: 768px;
   margin: 0 auto;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   background: black;
   backdrop-filter: blur(35px);
   //border-radius: 40px;
@@ -94,7 +112,8 @@ const tuongTac = () =>{
     font-weight: 700;
     padding-bottom: 6px;
   }
-  .avt-song{
+
+  .avt-song {
     width: 85px;
     height: 85px;
     border-radius: 25px;
@@ -112,13 +131,13 @@ const tuongTac = () =>{
     display: flex;
     flex-direction: column;
     overflow: auto;
-    height: 650px;
+    flex: 1;
   }
 
   .noi-dung {
     display: flex;
     align-items: center;
-    gap:10px;
+    gap: 10px;
 
   }
 
@@ -128,6 +147,7 @@ const tuongTac = () =>{
     justify-content: space-between;
     padding: 33px 19px 24px 29px;
     text-align: center;
+    height: 81px;
 
     .title {
       color: #F0F0F0;
@@ -186,29 +206,35 @@ const tuongTac = () =>{
 }
 
 @media (max-width: 586px) {
-  .container{
-    .avt-song{
+  .container {
+    .avt-song {
       width: 80px;
       height: 80px;
     }
-    .name-song{
+
+    .name-song {
       font-size: 17px;
     }
-    .tac-gia{
+
+    .tac-gia {
       font-size: 13px;
     }
-    .chua-tim{
+
+    .chua-tim {
       width: 18px;
     }
-    .song-playing{
+
+    .song-playing {
       width: 110px;
     }
-    .playing{
-      .play{
-        .circle{
+
+    .playing {
+      .play {
+        .circle {
           width: 40px;
         }
-        .icon-play{
+
+        .icon-play {
           top: 13px;
           right: 10px;
           width: 20px;
